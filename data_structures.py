@@ -1,16 +1,17 @@
 def legalAges():
-    lifeEvent = (
-        16, #driving,
-        18, #voting
-        21, #drinking
-        65  #retirement
-    )
+    lifeEvent = {
+        "drivingAge": 16,
+        "votingAge": 18,
+        "drinkingAge": 21,
+        "retirementAge": 65
+    }
     print("The legal driving age is "
-      + str(lifeEvent[0]) + ".")
+      + str(lifeEvent["drivingAge"]) + ".")
     print("The legal voting age is "
-      + str(lifeEvent[1]) + ".")
+      + str(lifeEvent["votingAge"]) + ".")
     print("The legal drinking age is "
-      + str(lifeEvent[2]) + ".")
+      + str(lifeEvent["drinkingAge"]) + ".")
     print("The legal retirement age is "
-      + str(lifeEvent[3]) + ".")
+      + str(lifeEvent["retirementAge"]) + ".")
 legalAges()
+
